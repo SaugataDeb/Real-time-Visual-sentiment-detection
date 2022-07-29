@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import streamlit as st
 from tensorflow import keras
-from tensorflow.python.keras.models import load_model
+from keras.models import load_model
 from tensorflow.keras.utils import img_to_array
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
