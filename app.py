@@ -98,11 +98,21 @@ def main():
         html_temp_about1= """<div style="background-color:#9a9bc0;padding:10px">
                                     <h4 style="color:black;text-align:center;">
                                     To know more about the creator. 
-                                    Log onto the link: https://www.linkedin.com/in/saugata-deb</h4>
                                     </div>
                                     </br>"""
         st.markdown(html_temp_about1, unsafe_allow_html=True)
+        st.write("Log onto: https://www.linkedin.com/in/saugata-deb")
 
+        
+        html_temp_about1= """<div style="background-color:#afbaa7;padding:10px">
+                                    <h4 style="color:black;text-align:center;">
+                                    Workplace of the creator.</h4> 
+                                    </div>
+                                    </br>"""
+            
+                                    
+        st.markdown(html_temp_about1, unsafe_allow_html=True)
+        st.write("Log onto: https://github.com/SaugataDeb")
         
     else:
         pass
