@@ -7,7 +7,7 @@ import cv2
 import streamlit as st
 from tensorflow.python.keras.models import load_model
 from tensorflow import keras
-from tensorflow.python.keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import img_to_array
 from tensorflow.python.keras.preprocessing import image
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 
