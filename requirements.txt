@@ -2,7 +2,3 @@ streamlit
 tensorflow-cpu
 opencv-python-headless==4.5.5.64
 streamlit-webrtc==0.42.0
-numpy==1.22.3
-opencv-python==4.6.0.66
-keras==2.9.0
-flask==2.1.3
