@@ -1,6 +1,6 @@
 
 from ctypes import alignment
-from tkinter import CENTER
+#from tkinter import CENTER
 from cv2 import circle
 import numpy as np
 import cv2
