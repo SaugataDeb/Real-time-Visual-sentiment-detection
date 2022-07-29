@@ -85,7 +85,7 @@ def main():
     elif choice == "Face emotion recognition":
         st.header("Live Feed:camera:")
         st.write("Press on Start Button to configure your camera. I can't wait further to see your lovely reactions.😃 ")
-        webrtc_streamer(key="example", video_processor_factory=VideoTransformer)
+        webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
 
     elif choice == "About Creator":
         st.subheader("About Creator 👨‍🔧")
