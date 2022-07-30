@@ -6,6 +6,19 @@ from tensorflow import keras
 from keras.models import load_model
 from tensorflow.keras.utils import img_to_array
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
+import asyncio
+
+def get_or_create_eventloop():
+    try:
+        return asyncio.get_event_loop()
+    except RuntimeError as ex:
+        if "There is no current event loop in thread" in str(ex):
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            return asyncio.get_event_loop()
+
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 
 # load model
 
